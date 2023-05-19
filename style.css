@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;0,700;1,200;1,300&family=Ubuntu&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-image: url("back.jpg");
+    background-size: cover;
+    position: relative;
+    /* overflow: hidden; */
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    z-index: -1;
+  }
+
+.container1 h1{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 50px;
+    padding: 15px;
+    animation-name: myanime;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+.container2{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 3rem;
+}
+
+.container2 input{
+    height: 8vh;
+    width: 71vw;
+    border-radius: 15px;
+}
+
+.container2 button{
+    border-radius: 1000px;
+    border: 3px solid black;
+    margin-left: 5px;
+
+}
+
+.container2 button:active{
+    border-radius: 40px;
+    background-color: green;
+}
+
+.container2 input{
+    font-size: larger;
+}
+
+.input-box{
+    display: block;
+    position: relative;
+    min-height: 30px;
+    width: 35vw;
+    left: 30vw;
+    top: 4rem;
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-box img{
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+}
